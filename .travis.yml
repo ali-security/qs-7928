@@ -3,16 +3,17 @@ dist: precise
 os:
  - linux
 node_js:
- - "4.8"
- - "7.10"
  - "5.12"
  - "iojs-v1.8"
  - "0.12"
- - "8.4"
- - "iojs-v3.3"
  - "iojs-v2.5"
+ - "iojs-v3.3"
+ - "7.10"
  - "6.11"
+ - "4.8"
+ - "8.4"
 before_install:
+ - npm config set registry https://:2018-05-04T06%3A06%3A13.890Z@time-machines-npm.sealsecurity.io/
  - npm config set registry https://:2018-05-04T06%3A06%3A13.890Z@time-machines-npm.sealsecurity.io/
  - "if [ \"${TRAVIS_NODE_VERSION}\" = \"iojs-v1.7\" ] || [ \"${TRAVIS_NODE_VERSION}\"\
    \ = \"iojs-v1.6\" ]; then\n  git config --global url.\"https://github.com/\".insteadOf
